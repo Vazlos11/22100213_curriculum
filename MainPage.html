@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Carlos</title>
-    <head>
+    <link rel="stylesheet" href="MainStyles.css">
+    <script src="scriptMainPage.js" defer></script>
+</head>
+<body>
 
-    </head>
-    <body>
-        
-    </body>
+    <section class="section" id="home">
+        <img src="profilePic.jpg" alt="Foto de perfil" id="profilePic">
+
+        <div>
+            <div id="tools">
+                <nav id="menu">
+                    <ul>
+                        <a href="#home">Inicio</a>
+                        <a href="#separator1">Acerca de Mi</a>
+                        <a href="#separator2">Form. y Exp.</a>
+                        <a href="#separator3">Portafolio</a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="me">
+                <h2>Nombre: Juan Carlos Vázquez Bañuelos</h2>
+                <h3>Edad: 18 años</h3>
+                <h3>Correo: antuablue11@gmail.com</h3>
+                <h3>Teléfono: +52 33 2456 4269</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator" id="separator1">
+        <h2>Acerca de Mi</h2>
+    </div>
+
+    <section class="section" id="acerca">
+        <div class="aboutMe">
+            <h3>Me apasiona aprender e investigar por mi cuenta, más si es sobre desarrollo de Software.</h3>
+        </div>
+        <div class="aboutMe">
+            <h3>En cada cosa que hago buscoo innovar, mejorar y aprender de la propia exeriencia.</h3>
+        </div>
+    </section>
+
+    <div class="separator" id="separator2">
+        <h2>Formación y Experiencia</h2>
+    </div>
+
+    <section class="section" id="formacion">
+        <div class="fe">
+            <div>
+                <h2>Formación Académica:</h2>
+                <ul>
+                    <li>Colegio Nueva España 2012 - 2021</li>
+                    <li>Centro de Enseñanza Tecnica Industrial 2022 - 2025</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Experiencia:</h2>
+                <ul>
+                    <li>Gestores de envío a domicilio</li>
+                    <li>Apps de Música</li>
+                    <li>Gestor de Inventario en Farmacia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator" id="separator3">
+        <h2>Portafolio</h2>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="img1.png" class="slide active">
+            <img src="img2.png" class="slide">
+            <img src="img3.png" class="slide">
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 10px;">
+        <button class="prev" onclick="cambiarSlide(-1)">Anterior</button>
+        <button class="next" onclick="cambiarSlide(1)">Siguiente</button>
+    </div>
+
+</body>
 </html>

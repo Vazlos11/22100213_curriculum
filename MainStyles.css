@@ -1,3 +1,194 @@
-.body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+    background-image: url("wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.section {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5%;
+    justify-content: center;
+    background-color: rgb(12, 3, 83);
+    margin-top: 2%;
+}
+
+.separator:hover {
+    background-color: rgb(5, 5, 59);
+    transition: 0.4s;
+}
+
+.separator h2{
+    color: wheat;
+    font-weight: 650;
+    font-size: 24px;
+}
+
+#profilePic {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 1%;
+    margin-left: 2%;
+}
+
+#profilePic:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#fondo {
+    background-image: url("wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#tools {
+    width: 800px;
+    height: fit-content;
+    padding: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    position: fixed;         
+    right: 30px;          
+    background-color: rgb(32, 32, 119); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;           
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+#menu a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: wheat;
+    font-size: 28px;
+    padding: 10px 20px;
+    font-weight: 600;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+#me{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+}
+
+#me h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+#me h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.aboutMe {
+    width: 50%;
+    height: fit-content;
+    padding: 2%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acerca{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider{
+    position: relative;
+    max-width: 10%;
+    max-height: 10%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+}
+
+.slide{
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+.prev, .next {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(12, 3, 83);
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(5, 5, 59);
+    transition: 0.3s;
+}
+
+.fe{
+    width: 100%;
+    height: fit-content;
+    padding: 2%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-between;
 }
